@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Button
+        android:text="@string/AnalyzingButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/AnalyzingButton" />
+    <TextView
+        android:text="READY"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/AnalyzingProgress"
+        android:gravity="center_horizontal"
+        android:textColor="#ff0000"
+        android:background="#ffffff" />
+    <ScrollView
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/MainScroolView"
+        android:scrollbars="vertical">
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/AnalyzingContent"
+            android:overScrollMode="always"
+            android:scrollbars="vertical"
+            android:scrollbarSize="5dp"
+            android:measureWithLargestChild="true" />
+    </ScrollView>
+</LinearLayout>

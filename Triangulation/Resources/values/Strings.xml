@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="Hello">Hello World, Click Me!</string>
+  <string name="ApplicationName">Triangulation</string>
+  <string name="Preferences">Settings</string>
+  <string name="StartButton">Start Scan</string>
+  <string name="PreparationString">Preparation for scanning\nMaking sure all component are active!\nScanning will begin in</string>
+  <string name="ScannigInProgress">Scannig in progress...</string>
+  <string name="ScanFailureTitle">Scan preparation failed to start!</string>
+  <string name="ScanFailureBody">No cell station found. Check your device\'s antenas, or turn off flying mode!</string>
+  <string name="NetworkChanged">Network Change Detected!\nSleeping.\nWaking up in...</string>
+  <string name="CaptureString">Capturing frames... Remainig</string>
+  <string name="AnalyzingButton">Start Analyzing</string>
+  <string name="AnalyzingProgess">Analyzing in progress... Please wait...</string>
+  <string name="AnalyzingDone">Analyzing Done...</string>
+  <string name="TryFetch">Fetch cell coordinates</string>
+  <string name="CalculateLocation">Calculate location</string>
+  <string name="GetGPSCoordinates">Start GPS</string>
+  <string name="GetGPSCoordinatesStop">Stop GPS</string>
+  <string name="ExportData">Export data</string>
+  <string name="NoDataCollectedForFetchingTitle">No accessible data!</string>
+  <string name="NoDataCollectedForFetchingBody">Sorry, the data is not analyzed or it is not collected. If you have already done the scanning process please go to analyzing tab first, otherwise go to Scannig tab!</string>
+  <string name="FetchingStarted">Fetching has started. Please wait...\nIt might take up to a minute...</string>
+  <string name="FetchingDone">Coordinates are fetch...</string>
+  <string name="NoConnectionTitle">No internet connection</string>
+  <string name="NoConnectionBody">Please connection to Wi-Fi or turn on your cellular data (no need to switch to 3G network).</string>
+  <string name="OK_Button">OK</string>
+  <string name="PrecalculationTitle">No coordinates detectec</string>
+  <string name="PrecalculationBody">It is important to firstly fetch the coordinates, so we can make calculations!</string>
+  <string name="GeolocationStarted">Location finding has begun. It may take a while. Please wait....</string>
+  <string name="NoDataTitle">No data for processing!</string>
+  <string name="NoDataBody">Sorry, but there is no data for processing!\nFirstly go to Scanning and gather some data</string>
+  <string name="NoGSMTitle">2G (GSM) Network mode required</string>
+  <string name="NoGSMBody">For the application to work properly please, switch your network to 2G!\nWould you like to go to preferences?</string>
+  <string name="RSSIValues">RSSI Values</string>
+  <string name="minimum">minimum</string>
+  <string name="average">average</string>
+  <string name="maximum">maximum</string>
+  <string name="ExportFailure">Exporting Process Failed</string>
+  <string name="ExportNoData">There\'s no data for exporting!</string>
+  <string name="ExportNotAnalyzed">The data can\'t be exported. It is not Analyzed!</string>
+  <string name="ExportNoCoordinates">There are no coordinates for the cells or GPS coordinates.\nWould you like to continue anyway?</string>
+  <string name="ExportStarted">Exporting process has begun... Please wait!</string>
+  <string name="ExportEnded">Your file is extracted as</string>
+  <string name="YES_BUTTON">YES</string>
+  <string name="NO_BUTTON">NO</string>
+  <string name="UnknownString">Unknown</string>
+  <string name="NoData">...</string>
+  <string name="ScanTab">Scanning</string>
+  <string name="AnalyzeTab">Analyzing</string>
+  <string name="ResultTab">Result&amp;Export</string>
+
+</resources>

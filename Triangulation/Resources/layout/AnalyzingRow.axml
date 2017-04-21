@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/Row"
+    android:textColor="#000000">
+    <TextView
+        android:text="***"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/MCC_Field"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_margin="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:textColor="#FF0000"
+        android:textStyle="bold" />
+    <TextView
+        android:text="***"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/MNC_Field"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_margin="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:textColor="#7F7F00"
+        android:textStyle="bold" />
+    <TextView
+        android:text="***"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/LAC_Field"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_margin="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:textColor="#00AF00"
+        android:textStyle="bold" />
+    <TextView
+        android:text="*****"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/CellID_Field"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_margin="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:textColor="#007F7F"
+        android:textStyle="bold" />
+</TableRow>

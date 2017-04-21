@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:p1="http://schemas.android.com/apk/res/android"
+    p1:minWidth="25px"
+    p1:minHeight="25px"
+    p1:layout_width="match_parent"
+    p1:layout_height="wrap_content"
+    p1:id="@+id/tableRow1"
+    p1:gravity="top">
+    <TextView
+        p1:text="LAC"
+        p1:textAppearance="?android:attr/textAppearanceSmall"
+        p1:id="@+id/LAC_Field"
+        p1:layout_height="wrap_content"
+        p1:layout_width="wrap_content"
+        p1:layout_margin="5dp"
+        p1:paddingLeft="10dp"
+        p1:paddingRight="10dp"
+        p1:paddingTop="3dp"
+        p1:paddingBottom="3dp"
+        p1:textColor="#FF0000"
+        p1:textStyle="bold"
+        p1:gravity="center" />
+    <TextView
+        p1:text="CellID"
+        p1:textAppearance="?android:attr/textAppearanceSmall"
+        p1:id="@+id/CellID_Field"
+        p1:layout_height="wrap_content"
+        p1:layout_width="wrap_content"
+        p1:layout_margin="5dp"
+        p1:paddingLeft="10dp"
+        p1:paddingRight="10dp"
+        p1:paddingTop="3dp"
+        p1:paddingBottom="3dp"
+        p1:textColor="#00FF00"
+        p1:textStyle="bold"
+        p1:gravity="center" />
+    <TextView
+        p1:text="RSSI"
+        p1:textAppearance="?android:attr/textAppearanceSmall"
+        p1:id="@+id/RSSI_Field"
+        p1:layout_height="wrap_content"
+        p1:layout_width="wrap_content"
+        p1:layout_margin="5dp"
+        p1:paddingLeft="10dp"
+        p1:paddingRight="10dp"
+        p1:paddingTop="3dp"
+        p1:paddingBottom="3dp"
+        p1:textColor="#0000FF"
+        p1:textStyle="bold"
+        p1:gravity="center" />
+</TableRow>

@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TableLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ActionTable"
+        android:measureWithLargestChild="false"
+        android:shrinkColumns="*"
+        android:stretchColumns="*">
+        <TableRow
+            android:id="@+id/ActionRow">
+            <Button
+                android:text="@string/TryFetch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/TryFetch"
+                android:textScaleX="0.8" />
+            <Button
+                android:text="@string/CalculateLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/CalculateLocation"
+                android:textScaleX="0.8" />
+            <Button
+                android:text="@string/GetGPSCoordinates"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/GetGPSCoordinates"
+                android:textScaleX="0.8" />
+            <Button
+                android:text="@string/ExportData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ExportData"
+                android:textScaleX="0.8" />
+        </TableRow>
+    </TableLayout>
+    <TextView
+        android:text="READY"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/FinalResultProgress"
+        android:gravity="center_horizontal"
+        android:textColor="#ff0000"
+        android:background="#ffffff" />
+    <ScrollView
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/MainScroolView"
+        android:scrollbars="vertical">
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Content"
+            android:overScrollMode="always"
+            android:scrollbars="vertical"
+            android:scrollbarSize="5dp"
+            android:measureWithLargestChild="true">
+            <LinearLayout
+                android:orientation="vertical"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/CellCoordinatesContent"
+                android:overScrollMode="always"
+                android:scrollbars="vertical"
+                android:scrollbarSize="5dp"
+                android:measureWithLargestChild="true" />
+            <LinearLayout
+                android:orientation="vertical"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/CalculatedLocationContent"
+                android:overScrollMode="always"
+                android:scrollbars="vertical"
+                android:scrollbarSize="5dp">
+                <TextView
+                    android:text="Calculated and GPS Coordinates"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/CoordinatesTableLabel"
+                    android:background="#000020"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingTop="10dp"
+                    android:textColor="#0000FF"
+                    android:textStyle="bold" />
+                <HorizontalScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/HorizontalTableScrol">
+                    <TableLayout
+                        android:minWidth="25px"
+                        android:minHeight="25px"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/CoordinationsTable"
+                        android:background="#aefcff"
+                        android:measureWithLargestChild="true">
+                        <TableRow
+                            android:minWidth="25px"
+                            android:minHeight="25px"
+                            android:id="@+id/CoordinationHeaders"
+                            android:background="#000080">
+                            <TextView
+                                android:text=""
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:layout_column="0"
+                                android:id="@+id/nullLabel"
+                                android:gravity="center_horizontal" />
+                            <TextView
+                                android:text="minimum"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:id="@+id/minimumLabel"
+                                android:gravity="center_horizontal"
+                                android:textStyle="bold"
+                                android:padding="5dp" />
+                            <TextView
+                                android:text="average"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:id="@+id/averageLabel"
+                                android:gravity="center_horizontal"
+                                android:textStyle="bold"
+                                android:padding="5dp" />
+                            <TextView
+                                android:text="maximum"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:id="@+id/maximumLabel"
+                                android:gravity="center_horizontal"
+                                android:textStyle="bold"
+                                android:padding="5dp" />
+                            <TextView
+                                android:text="GPS"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:id="@+id/GPSLabel"
+                                android:gravity="center_horizontal"
+                                android:textStyle="bold"
+                                android:padding="5dp" />
+                        </TableRow>
+                        <TableRow
+                            android:minWidth="25px"
+                            android:minHeight="25px"
+                            android:id="@+id/LatitudeRow">
+                            <TextView
+                                android:text="Latitude"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:layout_column="0"
+                                android:id="@+id/LatitudeLabel"
+                                android:gravity="center_horizontal"
+                                android:background="#000080"
+                                android:textStyle="bold"
+                                android:padding="5dp" />
+                            <TextView
+                                android:text="..."
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:id="@+id/minimumLat"
+                                android:gravity="center_horizontal"
+                                android:textColor="#000000"
+                                android:textStyle="bold"
+                                android:padding="5dp" />
+                            <TextView
+                                android:text="..."
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:id="@+id/averageLat"
+                                android:gravity="center_horizontal"
+                                android:textColor="#000000"
+                                android:textStyle="bold"
+                                android:padding="5dp" />
+                            <TextView
+                                android:text="..."
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:id="@+id/maximumLat"
+                                android:gravity="center_horizontal"
+                                android:textColor="#000000"
+                                android:textStyle="bold"
+                                android:padding="5dp" />
+                            <TextView
+                                android:text="..."
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:id="@+id/GPSLat"
+                                android:gravity="center_horizontal"
+                                android:textColor="#000000"
+                                android:textStyle="bold"
+                                android:padding="5dp" />
+                        </TableRow>
+                        <TableRow
+                            android:minWidth="25px"
+                            android:minHeight="25px"
+                            android:id="@+id/LongitudeRow">
+                            <TextView
+                                android:text="Longitude"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:layout_column="0"
+                                android:id="@+id/LongitudeLabel"
+                                android:gravity="center_horizontal"
+                                android:background="#000080"
+                                android:textStyle="bold"
+                                android:padding="5dp" />
+                            <TextView
+                                android:text="..."
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:id="@+id/minimumLon"
+                                android:gravity="center_horizontal"
+                                android:textColor="#000000"
+                                android:textStyle="bold"
+                                android:padding="5dp" />
+                            <TextView
+                                android:text="..."
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:id="@+id/averageLon"
+                                android:gravity="center_horizontal"
+                                android:textColor="#000000"
+                                android:textStyle="bold"
+                                android:padding="5dp" />
+                            <TextView
+                                android:text="..."
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:id="@+id/maximumLon"
+                                android:gravity="center_horizontal"
+                                android:textColor="#000000"
+                                android:textStyle="bold"
+                                android:padding="5dp" />
+                            <TextView
+                                android:text="..."
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:id="@+id/GPSLon"
+                                android:gravity="center_horizontal"
+                                android:textColor="#000000"
+                                android:textStyle="bold"
+                                android:padding="5dp" />
+                        </TableRow>
+                        <TableRow
+                            android:minWidth="25px"
+                            android:minHeight="25px"
+                            android:id="@+id/ErrorRow">
+                            <TextView
+                                android:text="Error (metres)"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:layout_column="0"
+                                android:id="@+id/ErrorLabel"
+                                android:gravity="center_horizontal"
+                                android:background="#800000"
+                                android:textStyle="bold"
+                                android:padding="5dp" />
+                            <TextView
+                                android:text="..."
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:id="@+id/minimumError"
+                                android:gravity="center_horizontal"
+                                android:textColor="#FFFFFF"
+                                android:textStyle="bold"
+                                android:padding="5dp"
+                                android:background="#800000" />
+                            <TextView
+                                android:text="..."
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:id="@+id/averageError"
+                                android:gravity="center_horizontal"
+                                android:textColor="#FFFFFF"
+                                android:textStyle="bold"
+                                android:padding="5dp"
+                                android:background="#800000" />
+                            <TextView
+                                android:text="..."
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:id="@+id/maximumError"
+                                android:gravity="center_horizontal"
+                                android:textColor="#FFFFFF"
+                                android:textStyle="bold"
+                                android:padding="5dp"
+                                android:background="#800000" />
+                            <TextView
+                                android:text=""
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:id="@+id/nullLabel"
+                                android:gravity="center_horizontal"
+                                android:background="#000000"
+                                android:padding="5dp"
+                                android:textColor="#000000" />
+                        </TableRow>
+                    </TableLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

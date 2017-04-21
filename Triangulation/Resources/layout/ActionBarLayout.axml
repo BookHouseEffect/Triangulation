@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:p1="http://schemas.android.com/apk/res/android"
+    p1:minWidth="25px"
+    p1:minHeight="25px"
+    p1:layout_width="match_parent"
+    p1:layout_height="wrap_content"
+    p1:id="@+id/gridLayout1"
+    p1:background="#0000ff">
+    <TextView
+        p1:text="@string/ApplicationName"
+        p1:textAppearance="?android:attr/textAppearanceMedium"
+        p1:layout_width="wrap_content"
+        p1:layout_height="match_parent"
+        p1:id="@+id/AppName"
+        p1:scaleType="center"
+        p1:capitalize="characters"
+        p1:gravity="center_vertical"
+        p1:paddingLeft="15dp"
+        p1:paddingRight="15dp"
+        p1:layout_gravity="center_vertical"
+        p1:textAllCaps="true" />
+    <Button
+        p1:text="@string/Preferences"
+        p1:textAppearance="?android:attr/textAppearanceSmall"
+        p1:layout_width="wrap_content"
+        p1:layout_height="match_parent"
+        p1:id="@+id/Pref"
+        p1:scaleType="center"
+        p1:capitalize="characters"
+        p1:gravity="center_vertical"
+        p1:layout_gravity="right"
+        p1:textAllCaps="true"
+        p1:paddingLeft="15dp"
+        p1:paddingRight="15dp"
+        p1:layout_margin="5dp" />
+</GridLayout>
